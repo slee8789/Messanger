@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "783335901269",
+    "firebase_url": "https://messanger-e99f1.firebaseio.com",
+    "project_id": "messanger-e99f1",
+    "storage_bucket": "messanger-e99f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783335901269:android:55875c7b885703f6",
+        "android_client_info": {
+          "package_name": "com.leesc.messanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783335901269-npsd3f4brgb8f8qtqrfsc1v4qg4nksrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leesc.messanger",
+            "certificate_hash": "4c6227ff4e3b9f16cb6c541e1f7fba084a0149cf"
+          }
+        },
+        {
+          "client_id": "783335901269-n1ddfjtedo091cst4munpncf030j22aq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpEoytnIezDJTlBQpbMQ8hY_a08m6jC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783335901269-n1ddfjtedo091cst4munpncf030j22aq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

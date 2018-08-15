@@ -1,0 +1,85 @@
+apply from: 'dependencies.gradle'
+
+def buildVersionCode = new Date().format("yyMMddHHmm", TimeZone.getTimeZone("Europe/Istanbul")).toInteger()
+def buildVersionName = "1.0"
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+        classpath 'com.google.gms:google-services:4.0.2'
+    }
+}
+
+ext {
+    androidCompileSdkVersion = 27
+    androidBuildToolsVersion = '27.1.1'
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 27
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+subprojects {
+    if (project.getName().matches('app')) {
+        apply plugin: 'com.android.application'
+        android {
+            compileSdkVersion androidCompileSdkVersion
+            defaultConfig {
+                applicationId "com.leesc.messanger"
+                minSdkVersion androidMinSdkVersion
+                targetSdkVersion androidTargetSdkVersion
+                versionCode buildVersionCode
+                versionName buildVersionName
+                testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+                buildConfigField("String", "END_POINT", "\"url...\"")
+            }
+
+            lintOptions {
+                abortOnError false
+            }
+
+            buildTypes {
+                release {
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                }
+            }
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+            dataBinding {
+                enabled = true
+            }
+        }
+    } else {
+        apply plugin: 'com.android.library'
+        android {
+            compileSdkVersion androidCompileSdkVersion
+            defaultConfig {
+                minSdkVersion androidMinSdkVersion
+                targetSdkVersion androidTargetSdkVersion
+            }
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

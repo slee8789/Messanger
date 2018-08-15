@@ -1,0 +1,56 @@
+ext {
+    supportLibrary = '27.1.1'
+    constraintLayout = '1.1.2'
+    architectureComponent = '1.1.1'
+    dagger = '2.17'
+    rxJava2 = '2.1.14'
+    rxAndroid = '2.0.2'
+    retrofit2 = '2.4.0'
+    rxLifecycle2 = '2.2.1'
+    stetho = '1.5.0'
+    leakCanary = '1.5.4'
+    androidSaripaar = '2.0.3'
+    firebase = '17.1.0'
+    firebaseAuth = '4.0.0'
+    lombok = '1.16.18'
+    annotation = '10.0-b28'
+    facebook = '4.34.0'
+    twitter = '3.3.0'
+    loggingInterceptor = '2.0.7'
+
+    dependencies = [
+            appCompat             : "com.android.support:appcompat-v7:$supportLibrary",
+            design                : "com.android.support:design:$supportLibrary",
+            gridLayout            : "com.android.support:gridlayout-v7:$supportLibrary",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:$constraintLayout",
+            lifecycleExtension    : "android.arch.lifecycle:extensions:$architectureComponent",
+            lifecycleCompiler     : "android.arch.lifecycle:compiler:$architectureComponent",
+            roomRxjava2           : "android.arch.persistence.room:rxjava2:$architectureComponent",
+            roomCompiler          : "android.arch.persistence.room:compiler:$architectureComponent",
+            rxJava                : "io.reactivex.rxjava2:rxjava:$rxJava2",
+            rxAndroid             : "io.reactivex.rxjava2:rxandroid:$rxAndroid",
+            retrofit              : "com.squareup.retrofit2:retrofit:$retrofit2",
+            converterGson         : "com.squareup.retrofit2:converter-gson:$retrofit2",
+            adapterRxjava2        : "com.squareup.retrofit2:adapter-rxjava2:$retrofit2",
+            loggingInterceptor    : "com.github.ihsanbal:LoggingInterceptor:$loggingInterceptor",
+            rxLifecycleAndroid    : "com.trello.rxlifecycle2:rxlifecycle-android:$rxLifecycle2",
+            rxLifecycleComponents : "com.trello.rxlifecycle2:rxlifecycle-components:$rxLifecycle2",
+            stetho                : "com.facebook.stetho:stetho:$stetho",
+            stethoOkhttp3         : "com.facebook.stetho:stetho-okhttp3:$stetho",
+            stethoJsRhino         : "com.facebook.stetho:stetho-js-rhino:$stetho",
+            leakcanaryAndroid     : "com.squareup.leakcanary:leakcanary-android:$leakCanary",
+            leakcanaryAndroidNoOp : "com.squareup.leakcanary:leakcanary-android-no-op:$leakCanary",
+            androidSaripaar       : "com.mobsandgeeks:android-saripaar:$androidSaripaar",
+            lombok                : "org.projectlombok:lombok:$lombok",
+            lombokAnnotation      : "org.glassfish:javax.annotation:$annotation",
+            firebase              : "com.google.firebase:firebase-messaging:$firebase",
+            firebaseAuth          : "com.firebaseui:firebase-ui-auth:$firebaseAuth",
+            facebook              : "com.facebook.android:facebook-android-sdk:$facebook",
+            twitter               : "com.twitter.sdk.android:twitter-core:$twitter",
+            dagger                : "com.google.dagger:dagger:$dagger",
+            daggerCompiler        : "com.google.dagger:dagger-compiler:$dagger",
+            daggerAndroid         : "com.google.dagger:dagger-android:$dagger",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:$dagger",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$dagger"
+    ]
+}

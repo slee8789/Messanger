@@ -10,7 +10,7 @@ MVVM      - ArchitectureComponent
 
 DI        - Dagger2
 
-CI        - Circle CI
+CI        - Jenkins
 
 RX        - Rxjava2, RxAndroid
 

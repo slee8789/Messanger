@@ -52,6 +52,19 @@ subprojects {
                 abortOnError false
             }
 
+            signingConfigs {
+                release {
+                    def configFile = file("signingconfig.properties")
+                    def props = new Properties()
+                    props.load(new FileInputStream(configFile))
+
+                    storeFile file("messanger")
+                    storePassword props.storePassword
+                    keyAlias props.keyAlias
+                    keyPassword props.keyPassword
+                }
+            }
+
             buildTypes {
                 release {
                     minifyEnabled false

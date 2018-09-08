@@ -24,4 +24,5 @@ ETC       - Stetho, LeakCanary, Lombok...
 
 
 # 문서
-https://trello.com/b/N6UOrBzt/messanger
+트렐로 https://trello.com/b/N6UOrBzt/messanger
+슬랙  http://messanger-leesc.slack.com

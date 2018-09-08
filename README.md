@@ -16,9 +16,12 @@ RX        - Rxjava2, RxAndroid
 
 Firebase  - Message, Auth, Hosting..
 
+Docker, Ngrok
+
 ETC       - Stetho, LeakCanary, Lombok...
 
 하면서 추가..
+
 
 # 문서
 https://trello.com/b/N6UOrBzt/messanger

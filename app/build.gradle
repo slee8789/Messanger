@@ -29,7 +29,7 @@ dependencies {
     annotationProcessor dependencies.lombok
     compileOnly dependencies.lombokAnnotation
     //push
-    implementation dependencies.firebase
+    implementation dependencies.firebaseMessaging
     //memory leak
     debugImplementation dependencies.leakcanaryAndroid
     releaseImplementation dependencies.leakcanaryAndroidNoOp

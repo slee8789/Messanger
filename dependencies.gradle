@@ -10,7 +10,7 @@ ext {
     stetho = '1.5.0'
     leakCanary = '1.5.4'
     androidSaripaar = '2.0.3'
-    firebase = '17.1.0'
+    firebaseMessaging = '17.3.1'
     firebaseAuth = '4.0.0'
     lombok = '1.16.18'
     annotation = '10.0-b28'
@@ -43,7 +43,7 @@ ext {
             androidSaripaar       : "com.mobsandgeeks:android-saripaar:$androidSaripaar",
             lombok                : "org.projectlombok:lombok:$lombok",
             lombokAnnotation      : "org.glassfish:javax.annotation:$annotation",
-            firebase              : "com.google.firebase:firebase-messaging:$firebase",
+            firebaseMessaging     : "com.google.firebase:firebase-messaging:$firebaseMessaging",
             firebaseAuth          : "com.firebaseui:firebase-ui-auth:$firebaseAuth",
             facebook              : "com.facebook.android:facebook-android-sdk:$facebook",
             twitter               : "com.twitter.sdk.android:twitter-core:$twitter",

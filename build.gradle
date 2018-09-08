@@ -86,8 +86,8 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-task print() {
-    doLast {
-        println "github push complete"
-    }
-}
+//task print() {
+//    doLast {
+//        println "github push complete"
+//    }
+//}

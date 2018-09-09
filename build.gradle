@@ -13,6 +13,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.1.4'
         classpath 'me.tatarka:gradle-retrolambda:3.7.0'
         classpath 'com.google.gms:google-services:4.0.2'
+        classpath 'com.deploygate:gradle:1.1.5'
     }
 }
 
@@ -48,6 +49,23 @@ subprojects {
                 buildConfigField("String", "END_POINT", "\"url...\"")
             }
 
+            apply plugin: 'deploygate'
+
+            deploygate {
+                userName = "slee8789"
+                token = "810f56a99a6965f64bf92f4182c41c9372c26b63"
+
+                apks {
+                    release {
+                        sourceFile = file("build/outputs/apk/release/app-release.apk")
+                    }
+
+                    debug {
+                        sourceFile = file("build/outputs/apk/debug/app-debug.apk")
+                    }
+                }
+            }
+
             lintOptions {
                 abortOnError false
             }
@@ -57,7 +75,6 @@ subprojects {
                     def configFile = file("signingconfig.properties")
                     def props = new Properties()
                     props.load(new FileInputStream(configFile))
-
                     storeFile file("messanger")
                     storePassword props.storePassword
                     keyAlias props.keyAlias

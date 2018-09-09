@@ -45,5 +45,7 @@ dependencies {
     implementation dependencies.daggerAndroid
     implementation dependencies.daggerAndroidSupport
     annotationProcessor dependencies.daggerAndroidProcessor
+    //deployGate
+//    implementation depend/encies.deployGate
 }
 apply plugin: 'com.google.gms.google-services'
